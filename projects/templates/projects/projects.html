@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{%block content%}
+<ul>
+<input id="search" type="text">
+<button id="enter">Enter</button>
+
+{% for key,value in flipkart_dic.items %}
+<li><a href="{{value}}"><span>{{key}}</span></a>
+<br> 
+</li>
+<hr>
+{% endfor %}
+
+
+
+</ul>
+{%endblock content%}
